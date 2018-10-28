@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <style media="screen">
+        .body{
+          width: 30%; height: 200px; background-color: #DADDE0; border-radius: 5px; font-size: 25px; margin-left: 33%; margin-top: 13%; overflow: hidden;;
+        }
+        input{
+          width: 75%; height: 30px;
+        }
+        button{
+          font-size: 20px; margin-left: 80px;
+        }
+    </style>
+  </head>
+  <body style="background-color: #3D6684">
+      <h1 style="margin-left: 550px; color: white">Register Pages</h1>
+      <h2 ><a style="color: red;margin-left: 44%" href="/login">Go to Login</a></h2>
+      <div class="body">
+        <form style="margin-left: 80px;margin-top: 25px;" action="/register-fill" method="post">
+            <label for="">Nik Name</label><br>
+              <input type="text" name="name" required><br>
+            <label for="">Password</label><br>
+              <input type="text" name="password" required><br>
+            <button type="submit" name="save" > Join </button>
+        </form>
+      </div>
+  </body>
+</html>

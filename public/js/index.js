@@ -13,12 +13,12 @@ socket.on('disconnect',()=>{
 //  on() da ushlanadi
 ////////////////////////////
 
-socket.on('newMessage',(message)=>{
-  console.log(message);
-})
+// socket.on('newMessage',(message)=>{
+//   console.log(message);
+// })
 
 
 socket.emit('createMessage',{
-  to: "mrsdk1902@mail.ru",
-  text: "Hi Developer"
+    from: "Admin",
+    text: "This is new message"
 })

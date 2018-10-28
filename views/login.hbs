@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Log In</title>
+    <style media="screen">
+        .body{
+          width: 30%; height: 200px; background-color: #DADDE0; border-radius: 5px; font-size: 25px; margin-left: 33%; margin-top: 13%; overflow: hidden;;
+        }
+        input{
+          width: 75%; height: 30px;
+        }
+        button{
+          font-size: 20px; margin-left: 80px;
+        }
+    </style>
+  </head>
+  <body style="background-color: #3D6684">
+      <h1 style="margin-left: 42%; color: white">Login Pages</h1>
+      <h2 style="margin-left: 41%; ">{{error}}</h4>
+      <h2 ><a style="color: red;margin-left: 43%" href="/register">Go to Register  </a></h2>
+      <div class="body">
+        <form style="margin-left: 80px;margin-top: 25px;" action="/login-fill" method="post">
+            <label for="">Nik Name</label><br>
+              <input type="text" name="name"><br>
+            <label for="">Password</label><br>
+              <input type="text" name="password"><br>
+            <button type="submit" name="save" > Join </button>
+        </form>
+      </div>
+  </body>
+
+</html>

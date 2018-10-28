@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+        {{ io }}
+    </script>
+    <style media="screen">
+            .chat-body{
+                width: 95%; border: 2px solid black; margin-left: 30px; height: 520px; overflow: hidden;
+                background-color: grey;
+            }
+            .chat-message{
+                width: 95%; border: 2px solid black; margin-left: 30px; margin-top: 10px; height: 100px; overflow: hidden;
+                background-color: grey;
+            }
+            form{ height: 100%; }
+            .footer{
+               height: 100%; width: 30%;  margin-left: 35%; margin-top: 30px;
+              }
+             .message{
+              width: 220px; height: 30%; font-size: 20px;
+            }
+             .send-message{
+              width: 80px; height: 30%; background-color: skyblue;
+            }
+    </style>
+  </head>
+  <body>
+    <div class="chat-body">
+        {{{messages}}}
+
+
+    </div>
+    <div class="chat-message">
+          <form class="" action="/message-save" method="post">
+            <div class="footer">
+              <input class="message" type="text" name="message" autofocus>
+              <button class="send-message" type="submit" name="button">Send</button>
+            </div>
+
+          </form>
+
+    </div>
+
+<script type="text/javascript" src="socket.io/socket.io.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+  </body>
+</html>

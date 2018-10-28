@@ -7,5 +7,15 @@
     "test": "nodemon server/server.js"
   },
   "author": "MrSdk",
-  "license": "ISC"
+  "license": "ISC",
+  "test": "mocha utils/*.test.js",
+  "test-watch": "nodemon --exec 'npm test'",
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.0.0",
+    "supertest": "^2.0.0"
+  },
+  "dependencies": {
+    "request": "^2.88.0"
+  }
 }
